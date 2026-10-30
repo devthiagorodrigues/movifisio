@@ -1,0 +1,18 @@
+{
+  "name": "movi-fisioterapia-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional da Movi Fisioterapia (página única, HTML estático gerado sem dependências em tempo de execução).",
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/images.mjs",
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "all": "npm run images && npm run build && npm run check"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.0"
+  },
+  "engines": { "node": ">=20" }
+}
